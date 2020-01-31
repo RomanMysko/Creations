@@ -48,7 +48,6 @@ def Time_test():
         Solovay_Strassen.isPrime(random_list_of_nums[i], k, r[i])
     end = time.time()
     print("Solovay_Strassen's time - ", end - start)
-    input()
 
 
 # A function that allows us to determine whether or not
@@ -71,13 +70,15 @@ def test():
     print("Fermat's algorithm ", Fermat.isPrime(n, k, r))
     print("Miller_Rabin's algorithm", Miller_Rabin.isPrime(n, k, r))
     print("Solovay_Strassen's algorithm", Solovay_Strassen.isPrime(n, k, r))
-    input()
 
 
 func = input("Input 'test' to check if a number is prime or 'time' to check the performance of methods\n")
 if func == "test":
     test()
+    input()
 elif func == "time":
     Time_test()
+    input()
 else:
     print("Wrong input")
+    input()
