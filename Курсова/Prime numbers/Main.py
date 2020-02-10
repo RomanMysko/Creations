@@ -28,7 +28,7 @@ def Time_test():
     for i in range(0, n):
         random_list_of_nums.append(random.randint(1, 1000000))
         for j in range(0, k):
-            a.append(random.randint(1, random_list_of_nums[i]))
+            a.append(random.randint(1, random_list_of_nums[i] - 1))
         r.append(a)
         a = []
     end = time.time()

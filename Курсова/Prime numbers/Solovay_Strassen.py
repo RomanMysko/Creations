@@ -45,6 +45,8 @@ def calculateJacobian(a, n):
 
 
 def isPrime(p, iterations, a):
+    if p != 2 and p % 2 == 0:
+        return False
     if p <= 1 or p == 4:
         return False
     if p <= 3:

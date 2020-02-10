@@ -1,4 +1,6 @@
 def isPrime(n, k, a):
+    if n != 2 and n % 2 == 0:
+        return False
     if n <= 1 or n == 4:
         return False
     if n <= 3:
